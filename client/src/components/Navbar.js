@@ -6,7 +6,7 @@ import Box from "@mui/material/Box";
 import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
 
-function Navbar({isLoggedIn}) {
+function Navbar() {
   const styles = {
     navStyles: {
       display: "flex",
@@ -71,8 +71,6 @@ function Navbar({isLoggedIn}) {
         >
           Workout Tracker
         </Typography>
-
-
         <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "flex" } }}>
           <Typography
             sx={{
@@ -96,12 +94,12 @@ function Navbar({isLoggedIn}) {
               Login
             </Link>
           </Typography>
-          </Box>
-        
+        </Box>
         {/* <Button color="inherit">Login</Button> */}
       </Toolbar>
     </AppBar>
-    
+    // </Box>
+    // </header>
   );
 }
 export default Navbar;
